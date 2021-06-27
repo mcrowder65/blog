@@ -1,7 +1,8 @@
-import '../styles/globals.css'
+import "nextra-theme-blog/style.css"
+import Prism from "prism-react-renderer/prism"
+;(typeof global !== "undefined" ? global : window).Prism = Prism
+require("prismjs/components/prism-c")
 
-function MyApp({ Component, pageProps }) {
+export default function Nextra({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
-
-export default MyApp
